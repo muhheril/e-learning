@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheets_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp"
+    style="@style/latar_dasar_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_judul_id"
+        style="@style/teks"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    <View
+        style="@style/garis"/>
+        <LinearLayout
+            style="@style/edittext"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30sp"
+            android:gravity="center_vertical">
+            <Spinner
+                android:id="@+id/spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Kelas" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/tombol_izinkan_dialog_id"
+        style="@style/tombol"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,181 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ELearning" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#006200EE</item>
+        <item name="colorPrimaryVariant">#003700B3</item>
+        <item name="colorOnPrimary">#00FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0003DAC5</item>
+        <item name="colorSecondaryVariant">#00018786</item>
+        <item name="colorOnSecondary">#00000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/statusbarcolor</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <color name="screen">#2F3133</color>
+    <color name="text">#DFDFDF</color>
+    <color name="text_transparant">#80DFDFDF</color>
+    <color name="button">#0056BF</color>
+    <color name="button_transparant">#800056BF</color>
+    <color name="button_press">#0068E6</color>
+    <color name="item">#DFDFDF</color>
+    <color name="item_press">#0056BF</color>
+    <color name="garis">#808080</color>
+    <color name="radio_button">#0056BF</color>
+    <color name="tombolnomor_transparant">#80636363</color>
+    <color name="tombol_delete">#FF4646</color>
+    <color name="tombolmaps">#4D0052B5</color>
+    <color name="tombolmapsstroke">#0072FF</color>
+    <color name="statusbarcolor">#000056BF</color>
+    <color name="coloritemicon">@color/colorSecondary</color>
+    <color name="card_view_color">#4A4A4A</color>
+    <color name="card_view_color_select">#800056BF</color>
+    <color name="textclick">#73B1FF</color>
+    <color name="warnaitemberanda">#DFDFDF</color>
+    <color name="warnaiconlatarbiru">@color/text</color>
+    <color name="item_radio_button">#DFDFDF</color>
+    <color name="alamatbackgroundtransparant">#4D0056BF</color>
+    <color name="teks_diatasgambar">#DFDFDF</color>
+    <color name="tekstransparant">#B3DFDFDF</color>
+
+
+
+    <!-- Mode gelap -->
+    <style name="latar_dasar_screen">
+        <item name="android:background">@color/screen</item>
+    </style>
+
+    <style name="appbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="android:background">@color/screen</item>
+    </style>
+
+    <style name="teks">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/gothic_a1_thin</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="tombol">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gothic_a1_thin</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/tombol</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <style name="btn_nomor">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/lingkaran</item>
+        <item name="android:textColor">@color/text_color_selector</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="loading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="lottie_rawRes">@raw/progresbar</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="lottie_loop">true</item>
+    </style>
+    <style name="loadingsearch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="lottie_rawRes">@raw/searchnullnight</item>
+        <item name="lottie_autoPlay">true</item>
+        <item name="lottie_loop">true</item>
+    </style>
+
+
+    <style name="edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_edittext</item>
+        <item name="android:drawablePadding">8sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">15sp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/gothic_a1_thin</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="garis">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/garis</item>
+    </style>
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="cardview">
+        <item name="backgroundTint">@color/card_view_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="radiobutton">
+        <item name="android:buttonTint">#0056BF</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="iconwa">
+        <item name="android:src">@drawable/whatsappdark</item>
+    </style>
+
+    <style name="iconmode">
+        <item name="android:src">@drawable/baseline_dark_mode_24</item>
+    </style>
+
+    <style name="mode">
+        <item name="android:text">Mode Gelap</item>
+    </style>
+
+    <style name="AlertDialogCustomStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Warna background dialog -->
+        <item name="android:background">@color/screen</item>
+        <!-- Warna teks pada tombol dan teks dialog -->
+        <item name="android:textColorPrimary">@color/text</item>
+        <!-- Warna teks sekunder pada dialog -->
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+</resources>

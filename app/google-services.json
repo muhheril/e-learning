@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "814665204312",
+    "firebase_url": "https://elearning-4e975-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "elearning-4e975",
+    "storage_bucket": "elearning-4e975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814665204312:android:d2fed111a275bd6534802d",
+        "android_client_info": {
+          "package_name": "com.ai.elearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWlV1FsguiFRhcALOwZSP9haU1EVeecxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

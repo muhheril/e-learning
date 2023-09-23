@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview_item_chat_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/cardview_click_effect"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_item_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pengirim_id"
+                    style="@style/teks"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Arnita Irianti, S.Si., M.Si."
+                    android:textColor="#ffff"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_waktu_id"
+                    style="@style/teks"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="15-09-2023   |   20:32"
+                    android:textColor="#ffff"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_pesan_id"
+                style="@style/teks"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffff"
+                android:gravity="left"
+                android:layout_marginBottom="5dp"
+                android:text="Disampaikan kepada seluruh mahasiswa agar segera menyetor tugas flowchatnya sebelum memasuki waktu Ujian Akhir Semester (UAS)."
+                android:textSize="12sp" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

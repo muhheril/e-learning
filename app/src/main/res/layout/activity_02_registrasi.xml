@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._02_Registrasi_A">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/screen"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_kembali_id"
+                style="@style/appbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/baseline_arrow_back_24"
+                app:title="Akun Baru"
+                app:titleMarginEnd="85dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:drawableStart="@drawable/baseline_person_24"
+                android:id="@+id/editTextName"
+                style="@style/edittext"
+                android:hint="Nama" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextNIM"
+                android:drawableStart="@drawable/baseline_notes_24"
+                style="@style/edittext"
+                android:hint="NIM" />
+
+            <LinearLayout
+                style="@style/edittext"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/baseline_class_24" />
+                <Spinner
+                    android:id="@+id/spinnerKelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih Kelas" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/edittext"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/baseline_menu_book_24" />
+                <Spinner
+                    android:id="@+id/spinnerJurusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih Kelas" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextAddress"
+                style="@style/edittext"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:hint="Alamat" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextPhoneNumber"
+                android:drawableStart="@drawable/baseline_phone_24"
+                style="@style/edittext"
+                android:inputType="number"
+                android:hint="Nomor Telepon" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextEmail"
+                android:drawableStart="@drawable/baseline_email_24"
+                style="@style/edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextPassword"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:maxLength="30"
+                style="@style/edittext"
+                android:hint="Password"
+                android:inputType="textPassword" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editTextKonfirmasiPassword"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:maxLength="30"
+                style="@style/edittext"
+                android:hint="Konfirmasi Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/tombol"
+                android:layout_marginTop="30dp"
+                android:text="Registrasi" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
